@@ -1,4 +1,4 @@
-# Revolut calculator
+# Revolut calculator (v1)
 
 ### It's a python script to calculate your taxable income from your stock sells.
 ### How to use:
