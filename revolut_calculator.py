@@ -69,11 +69,11 @@ def get_pre_and_post_quantities(data, at_index):
 
 
 # get the filename and the year from the user
-#if len(sys.argv) != 3:
-#    print("USE: python revolut_calculator.py <csv-file> <year>")
-#    exit(3)
-file = "file2.csv" # sys.argv[1]
-year = 2021 # int(sys.argv[2])
+if len(sys.argv) != 3:
+    print("USE: python revolut_calculator.py <csv-file> <year>")
+    exit(3)
+file = sys.argv[1]
+year = int(sys.argv[2])
 
 # read the excel file
 data = pd.read_csv(file, parse_dates=["Date"]) 
